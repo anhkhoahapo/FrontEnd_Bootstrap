@@ -1,0 +1,323 @@
+@import "variables";
+
+.navbar {
+	background: $c-transparent;
+	padding: 15px;
+	border: none; 
+	
+	.navbar-brand {
+		img {
+			width: 143.4px;
+			position: relative;
+			top: 50%;
+			@include translate(0, -50%);
+		}
+	}
+
+	.navbar-left {
+		li {
+			a,
+			a:hover {
+				color: $c-purple;
+			}
+
+		}
+	}
+
+	.navbar-right {
+		button {
+			margin-right: 8px;
+			text-transform: uppercase;
+		}
+
+		#btn-login {
+			color: $c-blue;
+		}
+
+		#btn-signup {
+			color: $c-white;
+			background: $c-blue;
+		}
+
+		#btn-search {
+			color: $c-purple;
+		    font-size: 1.5rem;
+		}
+	}
+}
+
+#home {
+	margin-bottom: 12.5%;
+
+	.sub-section {		
+		&.left {
+			padding-top: 9%;
+
+			.intro{
+				padding-left: 10%;
+				padding-right: 0;
+
+				// .row {
+				// 	margin-left: 0;
+				// 	margin-right: 0;
+				// }
+				
+				.logo {
+					margin-bottom: 10%;
+
+					img {
+						max-width: 33%;
+						height: auto;
+					}
+				}
+				
+				.intro-txt {
+					margin-bottom: 14%;
+
+					p {
+						font-family: VNFQuicksand;
+						font-size: 4rem;
+						font-weight: bold;
+						line-height: 1.13;
+						text-align: left;
+						padding: 0;
+						color: $c-blue;
+					}
+
+					#home-decorate-1 {
+					    left: -15px;
+					    transform: translate(-100%, 0);
+					    background: $c-blue;
+					}
+
+					#home-decorate-2 {
+					    left: -15px;
+					    top: 24px;
+					    transform: translate(-100%, 0);
+					    background: $c-tomato;
+					}
+
+					#home-decorate-3 {
+					    bottom: 24px;
+					    right: 0;
+					    transform: translate(50%, 0);
+					    background: $c-blue;
+					}
+
+					#home-decorate-4 {
+					    bottom: 0;
+					    right: 60px;
+						background: $c-tomato;
+					}
+
+					#home-decorate-5 {
+					    bottom: 0;
+					    right: 0;
+					    transform: translate(30%, 0);
+					    background: $c-yellow;
+					}
+				}
+
+				.detail-intro-txt {
+					margin-bottom: 6%;
+
+					p {
+						font-size: 1rem;
+						line-height: 1.5;
+						text-align: justify;
+						padding: 0;
+						color: $c-purple;
+					}
+				}
+
+				.btns {
+					.a-btn {
+						font-size: 0.875rem;
+						line-height: 50px;
+					}
+
+					.btn-see-more {
+						line-height: 46px;
+						margin-right: 20px;
+    					border: solid 2px $c-purple;
+						color: $c-purple;
+					}
+
+					.btn-try {
+						background: $c-lipstick;
+    					color: white;
+					}
+				}
+			}
+
+		}
+
+		&.right {
+			padding: 0;
+
+			.carousel {
+				padding: 0;
+
+				.item {
+					height: 100vh;
+					overflow: hidden;
+
+					img {
+						min-width: 100%;
+						min-height: 100%;
+						height: 100%;
+					}
+				}
+
+				.a-btn {
+					width: auto;
+					font-size: 14px;
+					opacity: 1;
+					line-height: 30px;
+					text-transform: uppercase;
+
+					&.btn-prev {
+						position: absolute;
+					    top: 50%;
+					    left: 28px;
+					    @include translate(0, -50%);
+					    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+					    border: solid 2px $c-blue;
+					    color: $c-blue;
+					}
+
+					&.btn-next {
+						position: absolute;
+					    top: 50%;
+					    right: 28px;
+					    left: auto;
+					    @include translate(0, -50%);
+					    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+					    background: $c-lipstick;
+					    color: $c-white;
+
+					    .ti-arrow-right {
+					    	margin: 0;
+					    }
+					}
+				}
+
+				.carousel-indicators {
+					position: absolute;
+				    bottom: 72px;
+				    left: 95px;
+				    width: auto;
+				    margin: 0;
+
+				    li {
+				    	width: 15px;
+					    height: 15px;
+					    border-radius: 50%;
+					    border-style: solid;
+					    border-width: 2px;
+				    }
+
+				    li:nth-child(1) {
+				    	border-color: $c-blue;
+				    }
+
+				    li:nth-child(2) {
+				    	border-color: $c-green;
+				    }
+
+				    li:nth-child(3) {
+				    	border-color: $c-yellow;
+				    }
+				}
+				
+				#home-decorate-6 {
+					z-index: 15;
+			    	position: absolute;
+				    bottom: 79px;
+				    left: 31px;
+				    background: $c-blue;
+			    }
+			}
+		}
+	}
+}
+
+#courses {
+	margin-top: 12.5%;
+	margin-bottom: 12.5%;
+	text-align: center;
+
+	.card {
+		
+		text-align: center;
+
+		.card-img {
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+			min-height: 300px;
+			margin-bottom: 23px;
+
+			img {
+				width: 100%;
+				@extend .e-center;
+			}
+		}
+
+		.card-title {
+			min-height: 51px;
+			margin-bottom: 23px;
+
+			p {
+				font-family: VNFQuicksand;
+				font-size: 2rem;
+				font-weight: bold;
+			}
+
+			&.n5 {
+				color: $c-blue;
+			}
+
+			&.n4 {
+				color: $c-purple;
+			}
+
+			&.n3 {
+				color: $c-lipstick;
+			}
+		}
+
+		.card-text {
+			margin-bottom: 93px;
+			min-height: 150px;
+			p {
+				font-size: 1rem;
+				line-height: 1.5;
+				text-align: justify;
+				color: #000000;
+			}
+		}
+
+		.card-btn {
+			.a-btn {
+				color: $c-white;
+				line-height: 50px;
+
+				&.n5 {
+					background-color: $c-blue;
+				}
+
+				&.n4 {
+					background-color: $c-purple;
+				}
+
+				&.n3 {
+					background-color: $c-lipstick;
+				}
+			}
+		}
+	}
+}
+
+
+@import "responsive"

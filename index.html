@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HapoJC</title>
+    <meta property="og:title" content="HapoJC - Japanese Class" />
+    <meta property="og:description" content="Summer is often synonymous with beachs, ballparks and barbecues" />
+    <meta property="og:url" content="https://anhkhoahapo.github.io/FrontEnd/" />
+    <meta property="og:site_name" content="HapoJC" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://haposoft.com/assets/front/img/haposoft-bg.jpg" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#home" class="navbar-brand"><img src="images/logo.png" alt="HapoJC"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="#">Bảng tin</a></li>
+                        <li><a href="#">Khoá học</a></li>
+                        <li><a href="#">Tủ sách</a></li>
+                        <li><a href="#">Học viên</a></li>
+                        <li><a href="#">Giảng viên</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <button id="btn-login" type="button" class="navbar-btn btn-large">Đăng nhập</button>
+                        </li>
+                        <li>
+                            <button id="btn-signup" type="button" class="navbar-btn btn-large">đăng ký <span class="ti-arrow-right"></button>
+                        </li>
+                        <li>
+                        	<button id="btn-search" type="button" class="navbar-btn btn-large"><span class="ti-search"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <section id="home">
+            <h3 class="sr-only">Home section</h3>
+        	<div class="row">
+        		<div class="sub-section left col-md-6">
+    				<div class="intro col-md-10 col-md-offset-2">
+        				<div class="row logo">
+        					<div class="col-md-12">
+        						<img src="images/logo.png" alt="">
+        					</div>
+        				</div>
+        				<div class="row intro-txt">
+        					<div class="col-md-10">
+        						<div id="home-decorate-1" class="decorate-lg"></div>
+                                <div id="home-decorate-2" class="decorate-sm"></div>
+                                <p class="title c-blue">Summer is often synonymous with beachs, ballparks and barbecues</p>
+                                <div id="home-decorate-3" class="decorate-lg"></div>
+                                <div id="home-decorate-4" class="decorate-sm"></div>
+                                <div id="home-decorate-5" class="decorate-lg"></div>
+        					</div>
+        				</div>
+        				<div class="row detail-intro-txt">
+        					<div class="col-md-9">
+        						<p>Summer is often synonymous with beaches, ballparks and barbecues, all offering tempting snacks and treats. To many women who are watching their weight, the back-to-school season is an ideal time to enroll in their own “Making Smarter Food Choices 101″ class </p>
+        					</div>
+        				</div>
+
+        				<div class="row btns">
+        					<div class="col-md-12">
+    	    					<a class="btn-see-more a-btn btn-huge" href="#">
+    	    						xem tiếp
+    	    						<span class="ti-arrow-right"></span>
+    	    					</a>
+    							<a class="btn-try a-btn btn-huge" href="#">
+    	    						đăng ký học thử  
+    	    						<span class="ti-arrow-right"></span>
+    	    						<span class="ti-angle-double-right"></span>
+    	    					</a>
+    	    				</div>
+        				</div>
+    				</div>
+        		</div>
+
+        		<div class="sub-section right col-md-6">
+        			<div id="home-slider" class="carousel slide col-md-12" data-ride="carousel">
+                        <div id="home-decorate-6" class="decorate-md"></div>
+    					<ol class="carousel-indicators">
+    					    <li data-target="#home-slider" data-slide-to="0" class="active"></li>
+    					    <li data-target="#home-slider" data-slide-to="1"></li>
+    					    <li data-target="#home-slider" data-slide-to="2"></li>
+    					</ol>
+
+    					<div class="carousel-inner" role="listbox">
+    					    <div class="item active">
+    					        <img src="images/slide-section1.jpg" alt="Slide 1">
+    					    </div>
+    					    <div class="item">
+    					        <img src="images/slide-section1.jpg" alt="Slide 2">
+    					    </div>
+                            <div class="item">
+                                <img src="images/slide-section1.jpg" alt="Slide 3">
+                            </div>
+    					</div>
+
+    					<a class="btn-prev a-btn btn-small carousel-control" href="#home-slider" role="button" data-slide="prev">
+    					    <span class="ti-arrow-left"></span> Prev
+    				    </a>
+
+    					<a class="btn-next a-btn btn-small carousel-control" href="#home-slider" role="button" data-slide="next">
+    					    Next <span class="ti-arrow-right"></span>
+    				    </a>
+    				</div>
+        		</div>
+        	</div>
+            
+        </section>
+
+        <section id="courses" class="row">
+            <h3 class="sr-only">Courses section</h3>
+            <div class="col-md-4">
+                <div class="card col-md-6 col-md-offset-3">
+                    <div class="card-img row">
+                        <img src="images/N5.png" alt="N5">
+                    </div>
+                    <div class="card-title n5 row">
+                        <p>Làm quen</p>
+                    </div>
+                    <div class="card-text row">
+                        <p>Khoá học dành cho những bạn chưa biết gì về tiếng Nhật. Kết thúc khoá học, trình độ của học viên sẽ tương đương với trình độ N5.</p>
+                    </div>
+                    <div class="card-btn row">
+                        <a class="a-btn n5 btn-huge" href="#">đăng ký học thử <span class="ti-arrow-right"></span><span class="ti-angle-double-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="card col-md-6 col-md-offset-3">
+                        <div class="card-img row">
+                            <img src="images/N4.png" alt="N4">
+                        </div>
+                        <div class="card-title n4 row">
+                            <p>Giao tiếp cơ bản</p>
+                        </div>
+                        <div class="card-text row">
+                            <p>Khoá học dành cho các bạn đã hoàn thành khoá học Làm quen với tiếng Nhật. Kết thúc khoá học, trình độ của học viên sẽ tương đương với trình độ N4, có thể tự giới thiệu bản thân bằng tiếng Nhật và giao tiếp mức độ đơn giản.</p>
+                        </div>
+                        <div class="card-btn row">
+                            <a class="a-btn n4 btn-huge" href="#">đăng ký học thử <span class="ti-arrow-right"></span><span class="ti-angle-double-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="card col-md-6 col-md-offset-3">
+                        <div class="card-img row">
+                            <img src="images/N3.png" alt="N3">
+                        </div>
+                        <div class="card-title n3 row">
+                            <p>Giao tiếp nâng cao</p>
+                        </div>
+                        <div class="card-text row">
+                            <p>Khoá học dành cho các bạn đã hoàn thành khoá học Giao tiếp cơ bản. Kết thúc khoá học, trình độ của học viên sẽ tương đương với trình độ N3, có thể giao tiếp thường ngày trôi chảy bằng tiếng Nhật. </p>
+                        </div>
+                        <div class="card-btn row">
+                            <a class="a-btn n3 btn-huge" href="#">đăng ký học thử <span class="ti-arrow-right"></span><span class="ti-angle-double-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="bookshelf"></section>
+        <section id="students"></section>
+        <section id="teachers"></section>
+        <section id="blog"></section>
+        <section id="contact"></section>
+    </div>
+    <footer>
+    </footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>

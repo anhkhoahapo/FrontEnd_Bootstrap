@@ -1,0 +1,45 @@
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 13.333px;
+    }
+
+    #home {
+        .sub-section {
+            &.left {
+                .intro{
+                    .intro-txt {
+                        p {
+                            font-size: 3.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    html {
+        font-size: 11.5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 8.533px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        .sub-section {
+            &.left {
+                .logo,
+                div[class^="decorate"] {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}

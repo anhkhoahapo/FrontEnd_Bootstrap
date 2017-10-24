@@ -1,0 +1,152 @@
+$c-transparent: rgba(0,0,0,0);
+$c-green: #b1d136;
+$c-blue: #00bcd4;
+$c-lipstick: #e91e63;
+$c-tomato: #f44336;
+$c-purple: #673ab7;
+$c-yellow: #ffc107;
+$c-white: #ffffff;
+
+@mixin translate($x, $y) {
+	   -moz-transform: translate($x, $y);
+	     -o-transform: translate($x, $y);
+	    -ms-transform: translate($x, $y);
+	-webkit-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url('../fonts/quicksand.ttf');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: VNFQuicksand;
+    src: url('../fonts/vnf-quicksand-bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Lato;
+    font-size: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+button {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    line-height: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+section{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+iframe {
+    border: 0px;
+    overflow:hidden;
+}
+
+.e-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+}
+
+.a-btn {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.a-btn .ti-arrow-right {
+    position: relative;
+    margin-left: 10px;
+    top: 0.1rem;
+}
+
+.a-btn .ti-angle-double-right {
+    position: relative;
+    left: -6px;
+    top: 0.1rem;
+}
+
+.btn-huge {
+    height: 50px;
+    padding: 0 30px;
+}
+
+.btn-large {
+    height: 40px;
+    padding: 0 20px;
+}
+
+.btn-medium {
+    height: 40px;
+    padding: 0 10px;
+}
+
+.btn-small {
+    height: 30px;
+    padding: 0 10px;
+}
+
+div[class^="decorate"] {
+    position: absolute;
+    height: 15px;
+    border-radius: 20px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.decorate-lg {
+    width: 76px;
+}
+
+.decorate-md {
+    width: 60px;
+}
+
+.decorate-sm {
+    width: 25px;
+}
