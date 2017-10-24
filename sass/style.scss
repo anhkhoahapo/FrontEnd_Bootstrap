@@ -359,9 +359,10 @@
 		height: 86%;
 
 		.imgs {
+
 			position: relative;
 			width: 86%;
-			margin: 0 auto;
+			margin: 15% auto;
 
 			#img-writing {
 			    z-index: -1;
@@ -406,6 +407,47 @@
 		}
 
 	}
+}
+
+#students {
+	padding-top: 15%;
+	padding-bottom: 15%;
+
+	.cards {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		
+		.card {
+			flex: 1;
+			margin: 0 70px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			.img {
+				max-width: 200px;
+				height: auto;
+				margin: 0 auto 71px;
+			}
+
+			.title {
+				font-family: VNFQuicksand;
+				font-size: 1.5rem;
+				font-weight: bold;
+				line-height: 1;
+				text-align: justify;
+				text-align: center;
+				margin: 0 -50px;
+			}
+		}
+	}
+
 }
 
 @import "responsive"
