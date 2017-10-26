@@ -1,6 +1,7 @@
 @import "variables";
 
 .navbar {
+    z-index: 1000;
     background: $c-transparent;
     padding: 15px;
     border: none;
@@ -47,6 +48,7 @@
 
 #home {
     margin-bottom: 12.5%;
+    max-height: 100vh;
 
     .sub-section {
         &.left {
@@ -54,10 +56,8 @@
 
             .intro {
                 padding-left: 10%;
-                padding-right: 0; // .row {
-                //  margin-left: 0;
-                //  margin-right: 0;
-                // }
+                padding-right: 0;
+
                 .logo {
                     margin-bottom: 10%;
 
@@ -82,21 +82,21 @@
 
                     #home-decorate-1 {
                         left: -15px;
-                        transform: translate(-100%, 0);
+                        @include translate(-100%, 0);
                         background: $c-blue;
                     }
 
                     #home-decorate-2 {
                         left: -15px;
                         top: 24px;
-                        transform: translate(-100%, 0);
+                        @include translate(-100%, 0);
                         background: $c-tomato;
                     }
 
                     #home-decorate-3 {
                         bottom: 24px;
                         right: 0;
-                        transform: translate(50%, 0);
+                        @include translate(50%, 0);
                         background: $c-blue;
                     }
 
@@ -109,7 +109,7 @@
                     #home-decorate-5 {
                         bottom: 0;
                         right: 0;
-                        transform: translate(30%, 0);
+                        @include translate(30%, 0);
                         background: $c-yellow;
                     }
                 }
@@ -240,7 +240,6 @@
     text-align: center;
 
     .card {
-
         text-align: center;
 
         .card-img {
@@ -367,7 +366,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                transform: translate(-20%, -50%);
+                @include translate(-20%, -50%);
             }
 
             #img-mac {
@@ -376,7 +375,7 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
-                transform: translate(20%, 20%);
+                @include translate(20%, 20%);
             }
 
             #btn-play {
@@ -385,7 +384,7 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                @include translate(-50%, -50%);
                 font-size: 2rem;
                 box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
                 background: $c-purple;
@@ -441,7 +440,7 @@
 
 #teachers {
     >.row>.col-md-12 {
-        padding-left: 0;
+        padding: 0;
     }
 
     #teacher-slider {
@@ -576,8 +575,6 @@
     }
 
     .sub-section {
-        width: 50%;
-
         &.left {
             float: left;
         }

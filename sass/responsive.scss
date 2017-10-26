@@ -31,15 +31,180 @@
 }
 
 @media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .navbar {
+        background: $c-white;
+    }
+
     #home {
+        max-height: none;
         .sub-section {
-            &.left {
-                .logo,
-                div[class^="decorate"] {
-                    display: none;
+            &.left{
+                height: 100vh;
+                padding-top: 150px;
+
+                .intro {
+                    padding-left: 0;
+
+                    .logo,
+                    div[class^="decorate"] {
+                        display: none;
+                    }
+
+                    .intro-txt {
+                        p {
+                            text-align: center;
+                            font-size: 3rem;
+                        }
+                    }
+
+                    .detail-intro-txt {
+                        p {
+                            text-align: center;
+                        }
+                    }
+
+                    .btns {
+                        text-align: center;
+
+                        .a-btn {
+                            margin-top: 50px;
+                        }
+                    }
                 }
+            }
+
+            &.right {
+                height: 100vh;
             }
         }
     }
     
+    #courses {
+        margin-bottom: 0;
+
+        .card {
+            margin-bottom: 100px;
+            border-bottom: solid 1px #aaa;
+
+            .card-img {
+                width: auto;
+                max-width: 60%;
+                min-height: 150px;
+            }
+
+            .card-text {
+                padding: 0 15px;
+                margin-bottom: 20px;
+                min-height: 150px;
+            }
+
+            .card-btn {
+                .a-btn {
+                    margin-bottom: 50px
+                }
+            }
+        }
+    }
+
+    #bookshelf {
+        .left {
+            padding-bottom: 100px;
+        }
+    }
+
+    #students {
+        .cards {
+            flex-wrap: wrap;
+
+            .card {
+                width: 40%;
+                flex-basis: 40%;
+                margin: 30px 0;
+
+                .img {
+                    max-width: 100px;
+                    height: auto;
+                    margin: 0 auto 71px;
+                }
+
+                .title {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    #teachers {
+        max-height: none;
+        margin: 100px 0;
+
+        #teacher-slider {
+            .item {
+                height: 100vh;
+                padding: 0 15px;
+
+                .left-img {
+                    img {
+                        height: 50vh;
+                    }
+
+                }
+
+                .right {
+                    height: 50vh;
+
+                    .info {
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    #blog {
+        .sub-section {
+            .bubble {
+                margin-bottom: 100px;
+                .avatar {
+                    bottom: -40px;
+                    right: 40px;
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .student {
+                    margin-right: 100px;
+                }
+            }
+        }
+    }
+
+    #contact {
+        .sub-section{
+            &.right {
+                padding-left: 0;
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        .links {
+            .fb-iframe {
+                iframe {
+                    width: auto;
+                    height: 617px;
+                    margin: 0 auto;
+                }
+            }
+
+            .blog-link {
+                display: none;
+            }
+        }
+    }
 }
