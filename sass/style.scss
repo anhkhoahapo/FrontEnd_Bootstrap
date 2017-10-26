@@ -28,6 +28,9 @@
         button {
             margin-right: 8px;
             text-transform: uppercase;
+            box-sizing: border-box;
+            max-height: 40px;
+            padding-top: 12px;
         }
 
         #btn-login {
@@ -129,11 +132,9 @@
                 .btns {
                     .a-btn {
                         font-size: 0.875rem;
-                        line-height: 50px;
                     }
 
                     .btn-see-more {
-                        line-height: 46px;
                         margin-right: 20px;
                         border: solid 2px $c-purple;
                         color: $c-purple;
@@ -164,8 +165,8 @@
                 .a-btn {
                     width: auto;
                     font-size: 14px;
+                    max-height: 30px;
                     opacity: 1;
-                    line-height: 30px;
                     text-transform: uppercase;
 
                     &.btn-prev {
@@ -292,7 +293,6 @@
         .card-btn {
             .a-btn {
                 color: $c-white;
-                line-height: 50px;
 
                 &.n5 {
                     background-color: $c-blue;
@@ -332,12 +332,11 @@
             }
 
             .a-btn {
-                line-height: 50px;
-                height: 50px;
                 background: $c-blue;
                 font-family: Lato;
                 color: $c-white;
                 font-size: .8rem;
+                line-height: 1rem;
                 letter-spacing: 0.2px;
                 margin-top: 50px;
             }
@@ -495,13 +494,13 @@
             width: auto;
             font-size: 14px;
             opacity: 1;
-            line-height: 30px;
             text-transform: uppercase;
+            max-height: 30px;
 
             &.btn-next {
                 position: absolute;
                 top: 50%;
-                right: 0;
+                right: 15px;
                 left: auto;
                 @include translate(0, -50%);
                 box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
